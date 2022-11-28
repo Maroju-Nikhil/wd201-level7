@@ -60,7 +60,7 @@ describe("Todo Application", function () {
       completed: false,
     });
     await agent.post("/todos").send({
-      title: "Buy ps3",
+      title: "Buy ps5",
       dueDate: new Date().toISOString(),
       completed: false,
     });
@@ -73,7 +73,7 @@ describe("Todo Application", function () {
 
   test("Deletes a todo with the given ID if it exists and sends a boolean response", async () => {
     const response = await agent.post("/todos").send({
-      title: "Buy notes",
+      title: "Buy notebook",
       dueDate: new Date().toISOString(),
       completed: false,
     });
